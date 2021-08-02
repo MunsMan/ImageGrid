@@ -24,8 +24,8 @@ The goal is, to not relay on single use Apps from the App Store or to even pay f
 
 ### Options
 
-`-r` or `--row` - Number of Images the in a Row of the Grid.
-`-c` or `--column` - Number of Images the in a Column of the Grid.
+- `-r` or `--row` - Number of Images the in a Row of the Grid.
+- `-c` or `--column` - Number of Images the in a Column of the Grid.
 
 ## Request
 
