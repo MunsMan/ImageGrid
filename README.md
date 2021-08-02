@@ -2,7 +2,19 @@
 
 A small Command Line Application to split an Image into a Grids. There are many possible configurations, how to split an Image.
 
-The goal is, to not relay on single use Apps from the App Store or to even pay for any. This application finish the job in style on a simple CLI Program
+The goal is, to not relay on single use Apps from the App Store or to even pay for any. This application finish the job in style off a simple CLI Program.
+
+## Example
+
+The goal is, to split the following Image into a Row of 3
+
+![Original Image](https://github.com/MunsMan/ImageGrid/blob/Images/img/DSC08314-Pano.jpg)
+
+`grid <Image> -r 3` or `grid <Image> --row 3`
+
+Image 0x0 | Image 0x1 | Image 0x2
+:--------:|:---------:|:---------:
+![Split1](https://github.com/MunsMan/ImageGrid/blob/Images/img/DSC08314-Pano_0x0.jpg) | ![Split2](https://github.com/MunsMan/ImageGrid/blob/Images/img/DSC08314-Pano_0x1.jpg) | ![Split3](https://github.com/MunsMan/ImageGrid/blob/Images/img/DSC08314-Pano_0x2.jpg)
 
 ## Setup
 
