@@ -1,6 +1,7 @@
 name: Python Image Grid Test
 
-on: push:
+on:
+  push:
     branches:
       - main
   pull_request:
