@@ -8,7 +8,7 @@ class Grid:
         self.__array: np.array = np.array(image)
         self.__type = type
         self.__shape = shape
-        self.name = name
+        self.__name = name
         self.__output = output
         self.grid = self.__splitImage()
         self.__splitRow()
@@ -16,7 +16,7 @@ class Grid:
     def save(self):
         for i, row in enumerate(self.grid):
             for j, column in enumerate(row):
-                filename = f"{self.name}_{i}x{j}.{self.__type}"
+                filename = f"{self.__name}_{i}x{j}.{self.__type}"
                 if self.__output:
                     filename = path.join(self.__output, filename)
                 Image.fromarray(column).save(filename)
