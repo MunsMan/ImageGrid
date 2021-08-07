@@ -22,9 +22,8 @@ Image 0x0 | Image 0x1 | Image 0x2
 
 1. Clone the Repo
 2. Enter the Repo
-3. `python3 setup.py install`
+3. `pip install .`
 4. `cd .. & rm -rf ImageGrid`
-5. `grid`
 
 ### Uninstall
 
