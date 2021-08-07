@@ -37,8 +37,10 @@ def getFormat(format) -> Tuple[bool, Tuple[int, int]]:
 @ click.argument("image", nargs=1, type=click.Path(exists=True))
 @ click.option('-r', '--row', 'row', default=1, type=int, help="Number of Images in a row.")
 @ click.option('-c', '--column', 'column', default=1, type=int, help="Number of Images in a column.")
+@ click.option('-o', '--output', 'output', type=click.Path(exists=True), help="Output directory for the Grid")
+@ click.option('-n', '--name', 'name', type=str, help="specifying a name for the output files. The grid number for each Image will be appended still.")
 @ click.option('--warning', default=False, help="To show warnings from dependencies.")
-def main(image, row, column, warning):
+def main(image, row, column, output, name, warning):
     """
     This script splits the image into multiple by the provided grid shape.
 
@@ -49,11 +51,11 @@ def main(image, row, column, warning):
     if row == column == 1:
         click.echo(click.get_current_context().get_help())
         exit()
-    filename = nameFromPath(image)
+    filename = name if name else nameFromPath(image)
     filetype = typeFromPath(image)
     filepath: Path = Path(image)
     image = loadImage(filepath)
-    grid: Grid = Grid(image, (column, row), filename, type=filetype)
+    grid: Grid = Grid(image, (column, row), filename, output, type=filetype)
     grid.save()
 
 
