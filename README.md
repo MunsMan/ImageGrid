@@ -39,6 +39,9 @@ Image 0x0 | Image 0x1 | Image 0x2
 
 - `-r` or `--row` - Number of Images the in a Row of the Grid.
 - `-c` or `--column` - Number of Images the in a Column of the Grid.
+- `-o`, `--output` - Output directory for the Grid
+- `-n`, `--name` - Specifying a name for the output files. The grid
+                        number for each Image will be appended still.
 
 ## Request
 
