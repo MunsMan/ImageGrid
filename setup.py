@@ -24,7 +24,7 @@ setup(
     version='0.9.0',
     packages=find_packages() + find_packages(where="./grid"),  # list of all packages
     install_requires=install_requires,
-    python_requires='>=3.6',  # any python greater than 2.7
+    python_requires='>=3.7',
     entry_points={'console_scripts': ['grid=grid.main:main']},
     author="Hendrik Munske",
     long_description=README,
