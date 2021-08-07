@@ -1,4 +1,4 @@
-[![Build](https://github.com/MunsMan/ImageGrid/actions/workflows/build_test.yml/badge.svg)](https://github.com/MunsMan/ImageGrid/actions/workflows/build_test.yml)
+[![Python Image Grid Test](https://github.com/MunsMan/ImageGrid/actions/workflows/build_test.yml/badge.svg)](https://github.com/MunsMan/ImageGrid/actions/workflows/build_test.yml)
 
 # ImageGrid
 
