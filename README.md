@@ -1,3 +1,5 @@
+[![Build](https://github.com/MunsMan/ImageGrid/actions/workflows/build_test.yml/badge.svg)](https://github.com/MunsMan/ImageGrid/actions/workflows/build_test.yml)
+
 # ImageGrid
 
 A small Command Line Application to split an Image into a Grids. There are many possible configurations, how to split an Image.
