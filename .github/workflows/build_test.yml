@@ -1,4 +1,4 @@
-name: Python Image Grid Test
+name: Build
 
 on:
   push:
